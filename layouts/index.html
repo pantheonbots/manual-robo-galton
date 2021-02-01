@@ -1,0 +1,14 @@
+{{ define "main" }}
+<section class="section container-fluid mt-n3 pb-3">
+  <div class="row justify-content-center">
+    <div class="col-lg-12 text-center">
+      <h1 class="mt-0">{{ .Title }}</h1>
+    </div>
+    <div class="col-lg-9 col-xl-8 text-center">
+      <p class="lead">{{ .Params.Lead | safeHTML }}</p>
+      <a class="btn btn-primary btn-lg px-4 mb-2" href='{{ "docs/introducao/estrategia/" | absURL }}' role="button">Iniciar Estudos</a>
+      <p class="meta">Acesse nosso site e conheça outras soluções de automação operacional<br><a href="https://www.pantheonbots.trade">www.pantheonbots.trade</a></p>
+    </div>
+  </div>
+</section>
+{{ end }}
