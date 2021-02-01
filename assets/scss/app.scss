@@ -77,3 +77,44 @@ blockquote {
     }
     
 }
+
+.logo-white {
+    display: none;
+}
+
+body.dark {
+
+    .logo-black {
+        display: none !important;
+    }
+    
+    .logo-white {
+        display: inline !important;
+    }
+
+}
+
+@media (max-width: 991px) {
+
+    .navbar-brand {
+        span {
+            display: none !important;
+        }
+    }
+
+
+}
+
+@media (max-width: 767px) {
+
+    .navbar-brand {
+        img {
+            height: 35px;
+        }
+    }
+
+
+}
+
+
+
