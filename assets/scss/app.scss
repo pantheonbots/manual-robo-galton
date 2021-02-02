@@ -61,19 +61,19 @@ blockquote {
     font-size: 1.2rem;
     &.alert-danger {
         p {
-            margin: 0;
             color:white !important;
-            line-height: 1.4rem;
         }
     }
     &.alert-warning {
         background-color: #fff3cd;
         border-color: #ffeeba;
         p {
-            margin: 0;
             color: #856404 !important;
-            line-height: 1.4rem;
         }
+    }
+    p {
+        margin: 0;
+        line-height: 1.9rem;
     }
     
 }

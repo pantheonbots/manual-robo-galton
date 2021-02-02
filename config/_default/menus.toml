@@ -17,6 +17,51 @@
   identifier = "filtros"
   url = "/docs/filtros/"
 
+[[docs]]
+  name = "Saída"
+  weight = 4
+  identifier = "saida"
+  url = "/docs/saida/gerais"
+
+[[docs]]
+  name = "Trava de Re-Entrada"
+  weight = 5
+  identifier = "trava"
+  url = "/docs/trava/re-entrada"
+
+[[docs]]
+  name = "Volumes e Aumentos"
+  weight = 6
+  identifier = "volumes"
+  url = "/docs/volumes/aumentos"
+
+[[docs]]
+  name = "Horários"
+  weight = 7
+  identifier = "horarios"
+  url = "/docs/horarios"
+
+[[docs]]
+  name = "Meta Diária"
+  weight = 8
+  identifier = "meta"
+  url = "/docs/meta/diaria"
+
+
+[[docs]]
+  name = "Segurança"
+  weight = 9
+  identifier = "seguranca"
+  url = "/docs/seguranca"
+
+
+[[docs]]
+  name = "Configurações Visuais"
+  weight = 10
+  identifier = "configuracoes_visuais"
+  url = "/docs/configuracoes/visuais"
+
+
 # [[main]]
 #   name = "Documentação Robô Galton"
 #   url = "/docs/introducao/estrategia"
