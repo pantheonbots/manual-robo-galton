@@ -1,4 +1,4 @@
-baseurl = "http://localhost/"
+baseurl = "/"
 disableAliases = true
 disableHugoGeneratorInject = true
 enableEmoji = true
