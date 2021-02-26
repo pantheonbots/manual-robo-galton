@@ -45,7 +45,9 @@ Os filtros de entrada tem o papel de impedir uma entrada que poderia ser perigos
 
 ## Filtro Volume
 
-- **(5) Usar Volume:** Se ligado, o robô fará apenas operações caso o volume estiver abaixo da média do volume configurado.
+- **(5) Usar Volume:** Se ligado, o robô irá filtrar entradas de acordo com o valor da média do volume configurado.
+
+- **(5) Direção do Filtro:** Se o valor estiver configurado em <ins>Operar Abaixo</ins>, o robô somente permitirá entradas caso o valor da média do volume for inferior ao da média configurada. Logo ,se o valor estiver confiugurado em <ins>Operar Acima</ins>, o robô apenas permitirá entradas caso o valor da média do volume for superior ao da média configurada. 
 
 - **(5) Tipo do Volume:** A quantidade de trades do candle é representada pelo tipo "Tick". A quantidade de contratos é representada pelo tick "Real".
 
@@ -67,9 +69,14 @@ Os filtros de entrada tem o papel de impedir uma entrada que poderia ser perigos
 
 - **(7) Período:** Período usado no indicador RSI.
 
+- **(7) Banda de Referência:** Considera as bandas exteriores ou interiores para realizar o filtro. O valor padrão é usar as faixas exteriores. Se considerar o valor <ins>Exterior</ins>, indicação de "Sobrecomprado" permite somente venda, e Sobrevendido somente compra. Se a configuração estiver com o valor <ins>Interior</ins>, será permitido venda valores inferiores à <ins>50</ins> (metade do RSI) e superiores ao Sobrevendido, e somente compras acima de <ins>50</ins> (metade do RSI) e abaixo do Sobrecomprado. 
+
 - **(7) Sobrecomprado:** Nível a ser considerado sobrecomprado. Se o valor do RSI estiver <ins>acima</ins> deste valor, vai liberar <ins>somente vendas</ins>.
 
 - **(7) Sobrevendido:** Nível a ser considerado sobrevendido. Se o valor do RSI estiver <ins>abaixo</ins> deste valor, vai liberar <ins>somente compras</ins>.
+
+
+
 
 Abaixo exemplo visual de um setup M10 DX50 contra tendência com todas as compras canceladas (regiões em azul) pelo filtro de tendência de média móvel de período 80. Tambem no exemplo, indicado pelas setas vermelhas as vendas válidas. Os outros funcionam da mesma forma na validação do sinal:
 
