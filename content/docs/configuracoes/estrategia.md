@@ -1,5 +1,5 @@
 ---
-title: "Configurações de Entrada"
+title: "Configurações da Estratégia"
 date: 2020-10-06T08:48:57+00:00
 lastmod: 2020-10-06T08:48:57+00:00
 draft: false
@@ -17,6 +17,8 @@ A configuração do setup começa por aqui. Nesta parte você define qual é a b
 
 - **Tipo de entrada:** Configura o robô apenas para compra, venda ou ambos.
 
+- **Spread máximo permitido:** Caso esse valor seja maior do que 0 (zero) o Galton vai monitorar o spread no momento que o setup der sinal de entrada. Se o spread for maior do que o valor informado, a operação é cancelada. Em ativos como mini índice ou mini dolar, o spread na maioria das vezes não oscila muito e é constante. Esse parâmetro pode ter mais utilidade em ativos do forex.
+
 - **Reversão da operação no sinal contrário:** Se ativado e caso o robô detecte um sinal contrário, fechará a operação atual (no lucro ou prejuízo) e inicia outra operação contrária.
 
 <div class="moldura">
@@ -26,7 +28,7 @@ A configuração do setup começa por aqui. Nesta parte você define qual é a b
 
 A reversão ativada é bastante usada em médias curtas e DX baixo. À cada sinal contrário (setas azul e vermelho) o robô vai encerrar a operação atual e entrar no sentido do novo sinal. Dessa forma, ele cria uma espécie de zigzag dentro do canal criado pelo DX (mostrado pelas setas pretas)
 
-- **Volume:** Número de contratos da primeira entrada.
+- **Contratos/Lotes:** Número de contratos da primeira entrada.
 
 - **Sinal apenas no fechamento do candle:** Se este parâmetro estiver ligado, o robô só irá verificar se houve rompimento da DX no fechamento do candle, ignorando qualquer sinal durante a formação do mesmo.
 
@@ -74,6 +76,7 @@ Entradas à favor da tendência:
     <p class="legenda">Entradas à favor da tendência</p>
 </div>
 
+## Indicator da Média Principal
 
 - **Período Média Móvel:** Período da média móvel principal, usada como base para calcular os DXs. Esta média é representada em preto em todos os exemplos desse manual
   

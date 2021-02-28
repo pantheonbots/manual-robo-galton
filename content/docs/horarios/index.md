@@ -24,7 +24,7 @@ Configura as opções de horário de operação do robô. O Galton possui 2 bloc
 
 - **Primeiro Horário de Término (entradas):** Define o horário que o robô encerrará as operações de entradas. Caso o robô esteja posicionado após este horário, a operação nao é encerrada. O robô apenas não fará mais entradas mas dará continuidade na operação normalmente.
 
-## Segundo horário
+## Segundo horário (opcional)
 
 - **Usar o Segundo Horário:** Configura o uso ou não de um segundo bloco de horário de operações. Se não estiver ligado, os horários configurados no segundo bloco são ignorados
 
@@ -32,7 +32,7 @@ Configura as opções de horário de operação do robô. O Galton possui 2 bloc
 
 - **Segundo Horário de Término (entradas):** Define o horário que o robô encerrará as operações de entradas. Caso o robô esteja posicionado após este horário, a operação nao é encerrada. O robô apenas não fará mais entradas mas dará continuidade na operação normalmente.
 
-## Fechamento de Posições
+## Daytrade / Fechamento de Posições
 
 Use essa opção caso esteja operando Day Trade, forçando o fechamento independente se no lucro ou prejuízo
 

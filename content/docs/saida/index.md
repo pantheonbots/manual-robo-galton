@@ -7,7 +7,7 @@ images: []
 menu:
   docs:
     parent: "saida"
-weight: 13
+weight: 14
 toc: true
 ---
 
@@ -27,19 +27,19 @@ A partir deste ponto, a configuração desses vários parâmetros de proteção 
 
 - **Tipo da ordem no Take Profit:** Configura se o Take Profit será à mercado ou no book.
 
-- **Take Profit em pontos:** Distância em pontos relativo ao preço médio.
+- **Take Profit em pontos:** Distância em pontos **relativo ao preço médio**.
 
 ## Take Profit Dinâmico
 
 Com o TP Dinâmico ligado, o robô irá monitorar os aumentos de posição. À cada aumento realizado, o robô irá remover do valor configurado no Take Profit (descrito acima) o valor configurado abaixo.
 
-<ins>Exemplo</ins>: Uma operação comprada com alvo de 100 pontos no mini-índice, e "Decremento" configurado em 10 pontos, se o robô realizou 2 aumentos de posição o TP atual se torna 80.
+<ins>Exemplo</ins>: Uma operação comprada com alvo de 100 pontos no mini-índice, e "Decremento" configurado em 10 pontos, se o robô realizou 2 aumentos de posição o TP atual se torna 80 de alvo em **relação ao preço médio**.
 
 - **Ativar Take Profit Dinâmico**: Liga ou desliga o Take Profit Dinâmico.
 
 - **Decremento à cada aumento**: Valor a ser subtraído do Take Profit à cada aumento de posição.
 
-- **Take Profit Mínimo**: Valor mínimo a ser configurado em caso de TP Dinâmico ligado. Funciona como uma trava de segurança. Aceita valores negativos.
+- **Take Profit Mínimo**: Valor mínimo a ser configurado em caso de TP Dinâmico ligado. Funciona como uma trava de segurança. Aceita valores negativos. Essa opção é importante para não deixar o seu take profit muito negativo, pois dependendo da configuração do decremento isso pode ser possível. O robô aceita valores negativos pois pode haver casos onde é aceitavel sair de uma posição pesada com um prejuízo controlado do que correr mais risco desnecessário por mais tempo. Tempo este que pode ser usado para recuperar o prejuízo.
 
 ## Stop Loss
 
@@ -47,20 +47,8 @@ Com o TP Dinâmico ligado, o robô irá monitorar os aumentos de posição. À c
 
 - **Stop Loss em pontos**: Distância em pontos do preço de entrada (ou do preço médio se assim configurado)
 
-## Break Even
+## Saída Parcial
 
-O Break Even possui 4 níveis, que trabalham de forma semelhante ao trailing stop (ou stop móvel). A diferença é que no break even você tem o controle da distância e proteção individualmente, mas limitados somente à 4 niveis.
+- **Usar Saída Parcial**: Liga ou desliga a saída parcial.
 
-- **(1~4) Distância em pontos:** Distância em pontos do preço entrada que ao atingir o robô fará o reajuste do Stop Loss
-
-- **(1~4) Ganho mínimo em pontos:** Distância em pontos do preço de entrada que será usada como proteção da operação
-
-## Trailing Stop
-
-- **Remove o Take Profit ao iniciar o Trailing Stop:** Se ativado. ao realizar a primeira proteção (ou ao realizar a primeira modificação do stop), o robô remove o take profit. Desta forma a operação fica sem alvo, e num mercado direcional pode atingir alvos mais longos
-
-- **Ativa a partir de X pontos (0 ativa imediatamente):** Distância em pontos a partir do preço entrada que ao atingir o robô fará o <ins>acionamento</ins> do trailing stop. Neste momento não há é realizado nenhum ajuste do stop loss. Se 0, o trailing já está ativo e realizará a alteração do stop loss assim que atingir a distância do preço de entrada
-
-- **Distância em pontos (0 não usar):** Distância em pontos a partir do <ins>preço atual</ins> que o robô fará o ajuste do stop loss
-
-- **Passos em pontos (0 não usar):** Intervalo em pontos a partir do <ins>preço de ativação</ins> que o trailing fará o reajuste do stop loss
+- **Alvo em pontos**: Take profit de cada saída parcial. O número de contratos/lotes usado é o mesmo do aumento de posição atual. Exemplo: Entrada de 1 contrato com 2 aumentos de 2 e 3 contratos respectivamente. No primeiro aumento (de 2 contratos/lotes) o robô fará uma saída parcial de 2 contratos, e no segundo aumento (de 3 contratos/lotes) o robô fará uma saída parcial de 3 contratos

@@ -1,13 +1,13 @@
 ---
-title: "Volumes e Aumentos"
+title: "Aumentos de Posição"
 date: 2020-10-06T08:48:57+00:00
 lastmod: 2020-10-06T08:48:57+00:00
 draft: false
 images: []
 menu:
   docs:
-    parent: "volumes"
-weight: 15
+    parent: "contratos"
+weight: 12
 toc: true
 ---
 
@@ -17,6 +17,6 @@ O preenchimento dos valores é sempre relativo ao **ponto de entrada** da opera�
 
 - **Tipo de ordem nos aumentos:** Configura se as ordens de aumento será enviadas no book no momento do inicio da operação ou se à mercado, sendo monitoradas as distâncias tick a tick
  
-- **(1~15) Distância:** Distância em pontos relativo ao ponto de entrada
+- **Distância em pontos (separados por vírgula):** Distância em pontos relativo ao ponto de entrada. Exemplo de preenchimento com um setup de 5 aumentos de 100 em 100 pontos no mini índice seria: **100,200,300,400,500**
 
-- **(1~15) Volume:** Quantidade de contratos que o robô vai adicionar na operação em cada nível de aumento
+- **Contratos/Lotes para cada aumento (separados por vírgula):** Quantidade de contratos que o robô vai adicionar na operação em cada nível de aumento. Exemplo de preenchimento para 5 níveis de aumento: **2,2,3,3,6**

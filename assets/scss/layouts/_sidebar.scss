@@ -85,6 +85,10 @@ a.docs-link {
   font-size: $font-size-base * 0.9375;
 }
 
+.docs-link.active {
+  font-weight: 600;
+}
+
 .docs-link:hover,
 .docs-link.active,
 .page-links a:hover {

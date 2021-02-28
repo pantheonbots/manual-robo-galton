@@ -13,15 +13,11 @@ toc: true
 
 Em geral essas configurações podem ser deixadas no valor padrão, com exceção do **Número Mágico**.
 
-**Nome do Setup:** Nome que vai identificar o seu setup. Parâmetro opcional. O nome fica visível no canto superior esquerdo do grafico, como mostrado abaixo:
+- **Nome do Setup:** Nome que vai identificar o seu setup. Parâmetro opcional. O nome fica visível no canto superior esquerdo do grafico, como mostrado abaixo:
 
-**Número Mágico:** Um número qualquer de sua escolha que vai ser usado para identificar as operações do robô. Este número deve ser único e não deve ser usado ao mesmo tempo em outro robô.
+- **Número Mágico:** Um número qualquer de sua escolha que vai ser usado para identificar as operações do robô. Este número deve ser único e não deve ser usado ao mesmo tempo em outro robô.
 
-**Spread máximo permitido:** Caso esse valor seja maior do que 0 (zero) o Galton vai monitorar o spread no momento que o setup der sinal de entrada. Se o spread for maior do que o valor informado, a operação é cancelada. Em ativos como mini índice ou mini dolar, o spread na maioria das vezes não oscila muito e é constante. Esse parâmetro pode ter mais utilidade em ativos do forex.
-
-## Configurações Avançadas
-
-**Tipo de preenchimento das ordens à mercado:** Configura qual vai ser a política de preenchimento. Abaixo segue uma breve explicação retirada do próprio site da MetaTrader5:
+- **Tipo de preenchimento das ordens à mercado:** Configura qual vai ser a política de preenchimento. Abaixo segue uma breve explicação retirada do próprio site da MetaTrader5:
 
 <div class="alert alert-warning d-flex" role="alert">
     <div class="flex-shrink-1 alert-icon">👉</div>
