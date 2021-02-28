@@ -1,6 +1,6 @@
 ---
-title : "Manual Robô GaltonPRO"
-description: "Manual Robô GaltonPRO."
+title : "Manual Robô Galton"
+description: "Manu2al Robô Galton."
 lead: ""
 date: 2020-10-06T08:48:23+00:00
 lastmod: 2020-10-06T08:48:23+00:00
