@@ -13,6 +13,8 @@ toc: true
 
 Em geral essas configurações podem ser deixadas no valor padrão, com exceção do **Número Mágico**.
 
+## Parâmetros
+
 - **Nome do Setup:** Nome que vai identificar o seu setup. Parâmetro opcional. O nome fica visível no canto superior esquerdo do grafico, como mostrado abaixo:
 
 - **Número Mágico:** Um número qualquer de sua escolha que vai ser usado para identificar as operações do robô. Este número deve ser único e não deve ser usado ao mesmo tempo em outro robô.
@@ -32,3 +34,19 @@ Em geral essas configurações podem ser deixadas no valor padrão, com exceçã
 > **ORDER_FILLING_RETURN**: Esta política é usada somente para ordens a mercado (ORDER_TYPE_BUY e ORDER_TYPE_SELL), ordens limit e stop limit (ORDER_TYPE_BUY_LIMIT, ORDER_TYPE_SELL_LIMIT, ORDER_TYPE_BUY_STOP_LIMIT e ORDER_TYPE_SELL_STOP_LIMIT ) e somente para os ativos com execução a Mercado ou execução em um sistema de negociação externo (Exchange)***. No caso de um preenchimento parcial, uma ordem a mercado ou do tipo limit com volume remanescente não é cancelada, mas processada posteriormente.
 Para a ativação das ordens ORDER_TYPE_BUY_STOP_LIMIT e ORDER_TYPE_SELL_STOP_LIMIT, uma ordem limit correspondente, ORDER_TYPE_BUY_LIMIT/ORDER_TYPE_SELL_LIMIT com o tipo de execução ORDER_FILLING_RETURN, é criada.
 Em termos práticos, o valor padrão FOK é o mais usado. Até o momento da criação deste manual, somente a modal (servidor não DMA4) usa o valor RETURN em suas ordens.
+
+
+## Teclas de Atalho
+
+Para a tecla ESC funcionar corretamente, é preciso "focar" no o gráfico do robô, ou seja, apenas clique em qualquer parte do gráfico do ativo.
+
+- **Tecla ESC**: Ao pressionar a tecla ESC, o robô terá a seguinte resposta:
+
+	- **Se o robô estiver posicionado**: O robô perguntará se você quer <ins>fechar manualmente</ins> todas as posições do ativo atual.
+
+	- **Se o robô não estiver posicionado**: Pausa o robô manualmente. Enquanto pausado, o robô não fará operações. Para despausar, apenas aperte ESC novamente. Enquanto o robô estiver pausado, o seu painel ficará ligeiramente apagado para fácil identificação.
+
+<div class="alert alert-warning d-flex" role="alert">
+    <div class="flex-shrink-1 alert-icon">👉</div>
+    <p>Caso queira fechar as operações do robô manualmente é recomendável que faça pelo próprio robo através da tecla <b>ESC</b>!. Fechamentos pelo cliente do Metatrader 5 não são contabilizados pelo robô e os lucros ou prejuízos não serão contabilizados no painel </p>
+</div>
