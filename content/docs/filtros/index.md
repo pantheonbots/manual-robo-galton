@@ -19,6 +19,14 @@ Os filtros de entrada tem o papel de impedir uma entrada que poderia ser perigos
 
 - **Período da média móvel:** Período da média móvel exponencial usada para indicar a tendência
 
+Abaixo exemplo visual de um setup M10 DX50 contra tendência com todas as compras canceladas (regiões em azul) pelo filtro de tendência de média móvel de período 80. Tambem no exemplo, indicado pelas setas vermelhas as vendas válidas. Os outros funcionam da mesma forma na validação do sinal:
+
+<div class="moldura">
+    <img src="../images/entrada-08.png" alt="Setup M10 DX50 com filtro de tendência média móvel de 80 períodos">
+    <p class="legenda">Setup M10 DX50 com filtro de tendência média móvel de 80 períodos</p>
+</div>
+
+
 ## Filtro VWAP
 
 - **Usar tendência por VWAP:** Se ligado, o robô fará apenas operações a favor da tendência da VWAP configurada.
@@ -71,15 +79,6 @@ Os filtros de entrada tem o papel de impedir uma entrada que poderia ser perigos
 
 - **Período:** Período usado no indicador RSI.
 
-- **Banda de Referência:** Considera as bandas exteriores ou interiores para realizar o filtro. O valor padrão é usar as faixas exteriores. Se considerar o valor <ins>Exterior</ins>, indicação de "Sobrecomprado" permite somente venda, e Sobrevendido somente compra. Se a configuração estiver com o valor <ins>Interior</ins>, será permitido venda valores inferiores à <ins>50</ins> (metade do RSI) e superiores ao Sobrevendido, e somente compras acima de <ins>50</ins> (metade do RSI) e abaixo do Sobrecomprado. 
+- **Sobrecomprado:** Nível a ser considerado sobrecomprado. Se o valor do RSI estiver <ins>acima</ins> deste valor, o filtro libera qualquer entrada (compra se estiver configurado à favor da tendência ou venda se tiver contra tendência)
 
-- **(7) Sobrecomprado:** Nível a ser considerado sobrecomprado. Se o valor do RSI estiver <ins>acima</ins> deste valor, vai liberar <ins>somente vendas</ins>.
-
-- **(7) Sobrevendido:** Nível a ser considerado sobrevendido. Se o valor do RSI estiver <ins>abaixo</ins> deste valor, vai liberar <ins>somente compras</ins>.
-
-Abaixo exemplo visual de um setup M10 DX50 contra tendência com todas as compras canceladas (regiões em azul) pelo filtro de tendência de média móvel de período 80. Tambem no exemplo, indicado pelas setas vermelhas as vendas válidas. Os outros funcionam da mesma forma na validação do sinal:
-
-<div class="moldura">
-    <img src="../images/entrada-08.png" alt="Setup M10 DX50 com filtro de tendência média móvel de 80 períodos">
-    <p class="legenda">Setup M10 DX50 com filtro de tendência média móvel de 80 períodos</p>
-</div>
+- **Sobrevendido:** Nível a ser considerado sobrevendido. Se o valor do RSI estiver <ins>abaixo</ins> deste valor, o filtro libera qualquer entrada (compra se estiver configurado à favor da tendência ou venda se tiver contra tendência)

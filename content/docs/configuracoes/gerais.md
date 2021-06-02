@@ -35,6 +35,7 @@ Em geral essas configurações podem ser deixadas no valor padrão, com exceçã
 Para a ativação das ordens ORDER_TYPE_BUY_STOP_LIMIT e ORDER_TYPE_SELL_STOP_LIMIT, uma ordem limit correspondente, ORDER_TYPE_BUY_LIMIT/ORDER_TYPE_SELL_LIMIT com o tipo de execução ORDER_FILLING_RETURN, é criada.
 Em termos práticos, o valor padrão FOK é o mais usado. Até o momento da criação deste manual, somente a modal (servidor não DMA4) usa o valor RETURN em suas ordens.
 
+- **Intervalo do timer interno (milisegundos):** Valor em milisegundos do timer de verificação de metas. Valor Padrão: 100
 
 ## Teclas de Atalho
 
