@@ -37,10 +37,6 @@ Esta seção é extremamente importante e é absolutamente necessário que se en
 
 - **Tempo em segundos de pausa após fechamento manual:** Caso haja um fechamento manual das operaões (tecla ESC enquanto o estiver posicionado), o robô irá fazer uma breve pausa para não entrar logo em seguida. Tempo suficiente para fazer a pausa manual do robô (tecla ESC se não estiver posicionado)
 
-## Instabilidade e Insconsistência
-
-- **Recria take profit no book em caso de falha:** Se por algum motivo o robô detecte que a operação não está com o take profit no book, tenta recriar caso esta opção estiver ligada. Essa opção é válida apenas para operações com take profit no book.
-
 ## Outros
 
 - **Remover o robô do gráfico após a trava ser acionada:** Com esta opção ativada, o robô é removido imediatamente do gráfico após **qualquer erro** ser detectado
