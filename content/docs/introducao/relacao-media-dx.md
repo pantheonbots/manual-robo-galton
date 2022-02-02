@@ -46,7 +46,7 @@ Exemplo de um setup moderado usando uma média longa (60) e DX alto (100):
 Exemplo de um setup conservador usando média curta (5) e DX alto (100):
 
 <div class="moldura">
-    <img src="../../images/rel-mdx-03.png" alt="M5 DX100">
+    <img src="../../images/rel-mdx-04.png" alt="M5 DX100">
     <p class="legenda">M5 DX100</p>
 </div>
 
